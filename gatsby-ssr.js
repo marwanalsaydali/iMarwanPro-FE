@@ -4,5 +4,5 @@ import "./src/styles/global.css";
 import React from "react";
 import Layout from "./src/layout/layout";
 export function wrapPageElement({ element, props }) {
-  return <Layout {...props}>{element}</Layout>;
+  return <Layout {...props}></Layout>;
 }
