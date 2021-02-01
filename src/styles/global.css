@@ -1,3 +1,51 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+:root {
+  --nav-bg: #000;
+  --nav-lc: #f5f5f5;
+  --nav-p: 5px;
+  --bg-dark: #f5f5f5;
+  --sec-padding: 25px;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: auto;
+}
+nav {
+  padding: var(--nav-p);
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--nav-bg);
+}
+.nav-links a {
+  color: var(--nav-lc);
+}
+.nav-links a:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer {
+  padding: var(--sec-padding);
+  background-color: var(--bg-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .media-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 170px;
+  padding: 10px 0;
+}
