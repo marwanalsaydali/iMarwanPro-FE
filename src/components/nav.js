@@ -3,11 +3,11 @@ import { Link } from "gatsby";
 
 const Nav = () => {
   return (
-    <nav>
+    <nav className="nav ">
       <div>
         <Link to="/">Logo</Link>
       </div>
-      <div>
+      <div className="nav-links">
         <Link to="/">Home</Link>
         <Link to="/gallery">Gallery</Link>
         <Link to="/orders">Orders</Link>
